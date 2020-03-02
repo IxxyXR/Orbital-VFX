@@ -159,6 +159,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
+  SMAAQuality: 2
   dithering: 1
   stopNaNs: 0
   physicalParameters:
@@ -171,6 +172,7 @@ MonoBehaviour:
     m_Anamorphism: 0
   flipYMode: 0
   fullscreenPassthrough: 0
+  allowDynamicResolution: 0
   customRenderingSettings: 0
   invertFaceCulling: 0
   probeLayerMask:
@@ -180,6 +182,10 @@ MonoBehaviour:
     bitDatas:
       data1: 69284256022301
       data2: 4539628424389459968
+    lodBias: 1
+    lodBiasMode: 0
+    maximumLODLevel: 0
+    maximumLODLevelMode: 0
   renderingPathCustomFrameSettingsOverrideMask:
     mask:
       data1: 0
@@ -340,7 +346,7 @@ GameObject:
   - component: {fileID: 1014997024}
   - component: {fileID: 1014997023}
   m_Layer: 0
-  m_Name: Orbital VFX
+  m_Name: Simple Orbital VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,7 +360,7 @@ VFXRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014997022}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 0
@@ -363,7 +369,6 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -393,7 +398,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014997022}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: d85c132e654824444add518901328712, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 9c10ea92a5275774bb3c5fd791b8d1ec, type: 3}
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
@@ -402,7 +407,13 @@ VisualEffect:
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0.1, y: 0, z: 0}
+        m_Name: Center
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 3.63, z: 0.01}
+        m_Name: Force
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:

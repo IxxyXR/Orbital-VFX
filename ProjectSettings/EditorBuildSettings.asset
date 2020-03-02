@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Orbital VFX.unity
+    guid: b94415ef9b1be5540ba1dbffdd888318
   m_configObjects: {}

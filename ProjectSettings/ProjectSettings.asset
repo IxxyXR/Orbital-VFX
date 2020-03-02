@@ -3,7 +3,7 @@
 --- !u!129 &1
 PlayerSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 17
+  serializedVersion: 18
   productGUID: d1fee49077e2a3f2d9b3705d66dcfbf2
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
@@ -46,14 +46,14 @@ PlayerSettings:
   defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
-  m_StereoRenderingPath: 1
+  m_StereoRenderingPath: 0
   m_ActiveColorSpace: 1
   m_MTRendering: 1
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
-  iosAppInBackgroundBehavior: 0
   displayResolutionDialog: 1
+  iosUseCustomAppBackgroundBehavior: 0
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
@@ -80,6 +80,7 @@ PlayerSettings:
   usePlayerLog: 1
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
+  useFlipModelSwapchain: 1
   resizableWindow: 0
   useMacAppStoreValidation: 0
   macAppStoreCategory: public.app-category.games
@@ -314,14 +315,14 @@ PlayerSettings:
     m_Automatic: 0
   m_BuildTargetVRSettings:
   - m_BuildTarget: Standalone
-    m_Enabled: 0
+    m_Enabled: 1
     m_Devices:
     - Oculus
     - OpenVR
-  m_BuildTargetEnableVuforiaSettings: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
+  vuforiaEnabled: 0
   m_TemplateCustomTags: {}
   mobileMTRendering:
     Android: 1
